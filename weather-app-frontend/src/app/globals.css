@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #6b48ff 0%, #00ddeb 100%);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Glassmorphism effect for cards (not search bar) */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+}
+
+/* Sticky search bar */
+.search-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: transparent;
+  /* No glass effect */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main content layout */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+  }
+}
+
+/* Current weather card */
+.current-weather {
+  flex: 2;
+  min-height: 400px;
+}
+
+/* Right column for details and forecast */
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Horizontal forecast */
+.forecast-horizontal {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #6b48ff 0%, #00ddeb 100%);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Glassmorphism effect for cards (not search bar) */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+}
+
+/* Sticky search bar */
+.search-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: transparent; /* No glass effect */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main content layout */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+  }
+}
+
+/* Current weather card */
+.current-weather {
+  flex: 2;
+  min-height: 400px;
+}
+
+/* Right column for details and forecast */
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Horizontal forecast */
+.forecast-horizontal {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
